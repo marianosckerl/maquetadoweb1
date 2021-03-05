@@ -1,3 +1,50 @@
 body {
     background-color: forestgreen;
+    font-family: serif;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: lighter;
+}
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+p {
+    text-align:justify;
+    font-size: 2em;
+}
+
+.posts article{
+    width: 49%; /*Le bajé a 49% para poder apreciar el inline */
+    padding: 0 1vw;
+    display: inline-block;
+    box-sizing: border-box; /*supuestamente con esto el borde lo contempla hacia adentro*/
+}
+
+.posts article,
+footer section:first-child{
+    border: 2px dotted #CCCCCC;
+}
+
+footer form input:hover, footer form textarea:hover{ 
+    background-color: green;
+}
+
+nav {
+    position: fixed;
+    top: 0; 
+}
+nav ul{
+    float: left;
+}
+nav ul li{
+    padding: 10px;
+    display: inline-block;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: darkcyan; /*le puse un background para que vea la caja centrada */
 }
